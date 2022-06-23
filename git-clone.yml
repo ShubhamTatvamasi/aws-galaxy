@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+
+  - name: clone magma repo
+    git:
+      repo: https://github.com/magma/magma.git
+      dest: magma
+      version: v1.7
